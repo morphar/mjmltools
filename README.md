@@ -1,3 +1,13 @@
+# Note about the `mjmltools` branch
+
+This is an attempt at creating a browser-friendly version, that works without pre-compile steps and CLI-specific functionality.  
+This includes all references to `os`, `fs`, `process`, etc.
+
+Everything is moved into a single package structure, with an index.js entrypoint, that exports the underlying methods.  
+For now, this is just `mjml2html` and `migrate`.
+
+Everything is automated, no code were touched by human hands.
+
 # MJML 4
 
 If you're looking for MJML 3.3.X check [this branch](https://github.com/mjmlio/mjml/tree/3.3.x)
